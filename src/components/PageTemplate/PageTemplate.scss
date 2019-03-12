@@ -1,0 +1,26 @@
+.page-template {
+   margin-top : 5rem; //rem : 상대적 크기 단위
+   margin-left : auto;
+   margin-right : auto;
+   width : 500px;
+   background : white;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   padding-top : 2rem;
+
+   //미디어쿼리 responsive web
+   @media(max-width: 768px){
+       margin-top : 1rem;
+       width : calc(100% -2rem);
+   }
+
+   h1 {
+       text-align : center;
+       font-size : 4rem;
+       font-weight: 300;
+       margin : 0;
+   }
+
+   .content {
+       margin-top : 2rem;
+   }
+}

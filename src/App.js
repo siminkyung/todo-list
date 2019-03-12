@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
+import PageTemplate from './components/PageTemplate';
+import TodoInput from './components/TodoInput';
+import TodoList from './components/TodoList';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-       
-      </div>
+      <PageTemplate>
+        <TodoInput/>
+        <TodoList/>
+      </PageTemplate>
     );
   }
 }
