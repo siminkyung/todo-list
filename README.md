@@ -18,8 +18,8 @@ css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생
 - **class names 라이브러리** - className이 여러개일때, 보다 편하게 className를 join할 수 있음
 <pre><code>$ yarn add classnames </code></pre>
 
-설치 후 classnames에서 제공하는 bind 함수를 사용하면 css명을 생략 할 수 있음
-<pre><code>const cx = classNames.bind(css 명);</code></pre>
+설치 후 classnames에서 제공하는 bind 함수를 사용하면 css 파일명을 생략 할 수 있음
+<pre><code>const cx = classNames.bind(css 파일명);</code></pre>
 <pre><code><\div className={cx('클래스 이름', '또 다른 클래스 이름')}>\</code></pre><br/>
 
 - **open-color 라이브러리 적용** - 색상 팔레트 라이브러리
