@@ -14,6 +14,39 @@ class App extends Component {
     ]
   }
 
+  handleRemove = (id) =>{
+    const {todos} = this.state;
+    const index = todos.findIndex(todo => todo.id === id);
+
+    this.setState({
+      todos : [
+        ...todos.slice(0, index),
+        ...todos.slice(index+1, todos.length)
+      ]
+    })
+  }
+
+  handleToggle = (id) =>{
+    console.log(id);
+    const {todos} = this.state;
+    const index = todos.findIndex(todo => todo.id === id);
+
+    const toggled = {
+      ...todos[index],
+      done : !todos[index].done
+    }
+
+    this.setState({
+      todos : [
+        ...todos.slice(0,index),
+        toggled,
+        ...todos.slice(index+1,todos.length)
+      ]
+    })
+
+    console.log(this.state.todos);
+  }
+
 
   //일정 데이터 안에 들어가는 id값
   id = 1;
@@ -23,6 +56,8 @@ class App extends Component {
 
   handleInsert = () => {
     const {todos, input} = this.state;
+
+    if(input === '') {alert('내용을 입력해주세요.'); return false;}
     
     const newTodo = {
       id : this.getId(),
@@ -45,12 +80,12 @@ class App extends Component {
 
   render() {
     const {input,todos} = this.state;
-    const {handleChange, handleInsert} = this;
+    const {handleChange, handleInsert, handleToggle, handleRemove} = this;
 
     return (
       <PageTemplate>
         <TodoInput onChange={handleChange} onInsert={handleInsert} value={input}/>
-        <TodoList todos={todos}/>
+        <TodoList todos={todos} onToggle={handleToggle} onRemove={handleRemove}/>
       </PageTemplate>
     );
   }
