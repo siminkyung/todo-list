@@ -19,7 +19,7 @@ css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생
 <pre><code>$ yarn add classnames </code></pre>
 
 설치 후 classnames에서 제공하는 bind 함수를 사용하면 css명을 생략 할 수 있음
-<pre><code>const cx = classNames.bind(css 명)</code></pre>
+<pre><code>const cx = classNames.bind(css 명);</code></pre>
 <pre><code><\div className={cx('클래스 이름', '또 다른 클래스 이름')}>\</code></pre><br/>
 
 - **open-color 라이브러리 적용** - 색상 팔레트 라이브러리
@@ -35,12 +35,11 @@ css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생
 
 **3. UI 화면 마크업 및 상태 관리 작업** <br/>
 
-**4. 컴포넌트 리렌더링 최적화**
-: virtual DOM에서의 불필요한 리렌더링을 방지하는 작업 <br/>
+**4. 컴포넌트 리렌더링 최적화** - virtual DOM에서의 불필요한 리렌더링을 방지하는 작업 <br/>
   상위 컴포넌트의 상태값 변화에 따라 해당 상태값을 props를 내려받는 하위 컴포넌트에서 불필요한 리렌더링 작업이 일어남 <br/>
   특히 리스트를 렌더링 할 경우에는 리렌더링을 최적화 하여 성능을 향상시키는 작업이 필요하다.<br/>
-- 리액트 라이프사이클 메소드중 shouldComponentUpdate()로 방지
-shouldComponentUpdate() : props또는 state를 변경하였을 때, 리렌더링의 여부를 지정하는 메소드. 기본 return값은 true
+- 리액트 라이프사이클 메소드중 shouldComponentUpdate()로 방지 <br/>
+**shouldComponentUpdate()** : props또는 state를 변경하였을 때, 리렌더링의 여부를 지정하는 메소드. 기본 return값은 true
 
 ---
 
