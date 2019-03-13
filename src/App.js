@@ -3,8 +3,8 @@ import PageTemplate from './components/PageTemplate';
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
 
-const initialTodos = new Array(500).fill(0).map(
-  (foo, index) => ({id: index, text:`일정 ${index}`, done : false})
+const initialTodos = new Array(3).fill(0).map(
+  (foo, index) => ({id: index, text:`테스트 일정 ${index}`, done : false})
 );
 
 class App extends Component {
