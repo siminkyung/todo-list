@@ -8,21 +8,21 @@
 <pre><code>$ create-react-app todo-list</code></pre> <br/>
 
 **2) 리액트 컴포넌트 스타일링** - CRA v2 부터 css module과 sass 자동 지원되므르 eject으로 환경설정을 수정하지 않아도 됨 
-- sass - css문법 확장. 코드의 중복을 줄여줌 
+- **sass** - css문법 확장. 코드의 중복을 줄여줌 
 <pre><code>$ yarn add node-sass </code></pre> <br/>
 
-- css module <br/>
+- **css module** <br/>
 css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생성. 스코프를 지역적으로 제한함. 이를 webpack으로 불러오면 사용자가 정의한 클래스 네임과 고유화된 클래스 네임으로 구성된 객체를 반환
 <pre><code>css 파일명을 <b>파일명.module.css</b>로 생성하면 적용</code></pre><br/>
 
-- class names 라이브러리 - className이 여러개일때, 보다 편하게 className를 join할 수 있음
+- **class names 라이브러리** - className이 여러개일때, 보다 편하게 className를 join할 수 있음
 <pre><code>$ yarn add classnames </code></pre>
 
 설치 후 classnames에서 제공하는 bind 함수를 사용하면 css명을 생략 할 수 있음
 <pre><code>const cx = classNames.bind(css 명)</code></pre>
 <pre><code><\div className={cx('클래스 이름', '또 다른 클래스 이름')}>\</code></pre><br/>
 
-- open-color 라이브러리 적용 - 색상 팔레트 라이브러리
+- **open-color 라이브러리 적용** - 색상 팔레트 라이브러리
 <pre><code>$ yarn add open-color </code></pre><br/>
 
 
