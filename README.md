@@ -12,7 +12,7 @@
 <pre><code>$ yarn add node-sass </code></pre> <br/>
 
 - css module <br/>
-- css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생성. 스코프를 지역적으로 제한함. 이를 webpack으로 불러오면 사용자가 정의한 클래스 네임과 고유화된 클래스 네임으로 구성된 객체를 반환
+css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생성. 스코프를 지역적으로 제한함. 이를 webpack으로 불러오면 사용자가 정의한 클래스 네임과 고유화된 클래스 네임으로 구성된 객체를 반환
 <pre><code>css 파일명을 <b>파일명.module.css</b>로 생성하면 적용</code></pre><br/>
 
 - class names 라이브러리 - className이 여러개일때, 보다 편하게 className를 join할 수 있음
