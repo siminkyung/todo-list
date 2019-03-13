@@ -1,8 +1,6 @@
 ## 일정관리 웹 애플리케이션 제작
 **@실습 환경** : Windows 10, yarn 1.13, VS Code, React 16.8.4
 
----
-
 **@컴포넌트 구성**
 - PageTemplate : UI 전체적인 틀
 - TodoInput : 일정추가 input 컴포넌트
