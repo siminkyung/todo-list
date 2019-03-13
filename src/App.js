@@ -6,7 +6,7 @@ import TodoList from './components/TodoList';
 const initialTodos = new Array(3).fill(0).map(
   (foo, index) => ({id: index, text:`테스트 일정 ${index}`, done : false})
 );
-
+ 
 class App extends Component {
   state = {
     input : '', //input 값
