@@ -3,11 +3,11 @@
 
 ---
 
-**@프로젝트 준비** 
-1. create-react-app을 통해 프로젝트 생성
+**1. 프로젝트 준비** 
+1) create-react-app을 통해 프로젝트 생성
 <pre><code>$ create-react-app todo-list</code></pre> <br/>
 
-2. 리액트 컴포넌트 스타일링 //CRA v2 부터 css module과 sass 자동 지원되므르 eject으로 환경설정을 수정하지 않아도 됨 
+2) 리액트 컴포넌트 스타일링 //CRA v2 부터 css module과 sass 자동 지원되므르 eject으로 환경설정을 수정하지 않아도 됨 
 - sass //css문법 확장. 코드의 중복을 줄여줌 
 <pre><code>$ yarn add node-sass </code></pre> <br/>
 
@@ -26,16 +26,16 @@ css를 모듈화 하는것으로, 고유한 클래스 네임을 자동으로 생
 <pre><code>$ yarn add open-color </code></pre><br/>
 
 
-**@컴포넌트 구성**
+**2. 컴포넌트 구성**
 - PageTemplate : UI 전체적인 틀
 - TodoInput : 일정추가 input 컴포넌트
 - TodoItem : 각각의 일정 컴포넌트
 - TodoList : 일정 데이터 배열을 TodoItem 컴포넌트로 구성된 배열로 변환하여 렌더링하는 컴포넌트
 <br/>
 
-**@UI 화면 마크업 및 상태 관리 작업** <br/>
+**3. UI 화면 마크업 및 상태 관리 작업** <br/>
 
-**@컴포넌트 리렌더링 최적화**
+**4. 컴포넌트 리렌더링 최적화**
 : virtual DOM에서의 불필요한 리렌더링을 방지하는 작업 <br/>
   상위 컴포넌트의 상태값 변화에 따라 해당 상태값을 props를 내려받는 하위 컴포넌트에서 불필요한 리렌더링 작업이 일어남 <br/>
   특히 리스트를 렌더링 할 경우에는 리렌더링을 최적화 하여 성능을 향상시키는 작업이 필요하다.<br/>
